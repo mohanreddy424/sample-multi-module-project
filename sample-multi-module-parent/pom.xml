@@ -27,12 +27,7 @@
                 <artifactId>spring-webmvc</artifactId>
                 <version>${spring.version}</version>
             </dependency>
-                   <distributionManagement>
-  <repository>
-    <id>snapshots</id>
-     <url>http://localhost:8081/repository/maven-snapshots</url>
-    </repository>
-  </distributionManagement>
+                  
                  
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
@@ -47,6 +42,13 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+         
+          <distributionManagement>
+  <repository>
+    <id>snapshots</id>
+     <url>http://localhost:8081/repository/maven-snapshots</url>
+    </repository>
+  </distributionManagement>
 
     <modules>
         <module>../sample-multi-module-service</module>
